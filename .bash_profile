@@ -27,6 +27,8 @@ if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_
 	source "$(brew --prefix)/share/bash-completion/bash_completion";
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
+elif [ -f /usr/local/etc/bash_completion ]; then
+    source /usr/local/etc/bash_completion
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`

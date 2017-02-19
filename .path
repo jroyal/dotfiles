@@ -4,6 +4,7 @@ elif [ -d "~/development/go" ]; then
   export GOPATH=~/development/go
 fi
 
+PATH="/usr/local/bin:$PATH"
 PATH=$GOPATH/bin:$PATH
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 
