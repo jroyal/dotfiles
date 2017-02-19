@@ -1,0 +1,10 @@
+if [ -d "~/development/gohome" ]; then
+  export GOPATH=~/development/gohome
+elif [ -d "~/development/go" ]; then
+  export GOPATH=~/development/go
+fi
+
+PATH=$GOPATH/bin:$PATH
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+
+export PATH
